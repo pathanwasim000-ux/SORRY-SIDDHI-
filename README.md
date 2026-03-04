@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I'm Sorry Siddhi ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 120px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 22px;
+            width: 70%;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            color: #ff4d6d;
+            cursor: pointer;
+        }
+
+        .heart {
+            font-size: 40px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Siddhi Madadik ❤️</h1>
+    <div class="heart">💖</div>
+
+    <p>
+        I know I made a mistake and I am truly sorry.  
+        You are very special to me, and hurting you was never my intention.  
+        Please forgive me. My heart is always yours. 💕
+    </p>
+
+    <button onclick="forgive()">Click If You Forgive Me 🥺</button>
+
+    <script>
+        function forgive() {
+            document.body.innerHTML = `
+                <h1 style="margin-top:200px;">Thank You Siddhi ❤️</h1>
+                <p>I promise to be better and never hurt you again. 💕</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
